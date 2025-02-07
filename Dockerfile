@@ -8,7 +8,7 @@ RUN apt update && apt install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Clonar el repositorio en el directorio de Nginx
-RUN git clone https://github.com/JAAS210299/pda.git /tmp/sass && mv /tmp/pda/* /var/www/html/
+RUN git clone https://github.com/JAAS210299/dwec.git /tmp/app && mv /tmp/app/* /var/www/html/
 
 # Exponer el puerto 80
 EXPOSE 80
